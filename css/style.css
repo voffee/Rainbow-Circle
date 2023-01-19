@@ -1,7 +1,34 @@
 
+:root {
+    --text-primary: #ffffff;
+}
+
 /* Reset */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bebas Neue', cursive;
+    background-color: #fdf8ef;
+    color: #020710;
+    line-height: 1.6;
+}
+
+.ribbon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container {
+    display: grid;
+}
+
+.rainbow-circle img {
+    height: 25%;
+    width: 25%;
 }
