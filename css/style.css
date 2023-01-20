@@ -1,6 +1,10 @@
 
 :root {
-    --text-primary: #ffffff;
+    --background-primary: #fdf8ef;
+    --text-primary: #020710;
+    --link-color: #ffffff;
+    --ribbon-background: #ED2939;
+
 }
 
 /* Reset */
@@ -12,9 +16,9 @@
 
 body {
     font-family: 'Bebas Neue', cursive;
-    background-color: #fdf8ef;
-    color: #020710;
-    line-height: 1.6;
+    background-color: var(--background-primary);
+    color: var(--text-primary);
+    min-height: 100vh;
 }
 
 .ribbon {
@@ -22,13 +26,70 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    background-color: var(--ribbon-background);
+    width: 100%;
+    padding:  5px 10px 5px 10px;
+}
+
+.ribbon div:first-child {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.ribbon div:first-child p {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+
+.ribbon div:last-child {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--link-color);
 }
 
 .container {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .rainbow-circle img {
-    height: 25%;
-    width: 25%;
+    height: 100%;
+    width: 100%;
+    margin-top: 100px;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 350px) {
+    .ribbon {
+        padding: 5px 10px 5px 10px;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .ribbon div:first-child p {
+        font-size: 2rem;
+    }
+    .ribbon div:last-child p {
+        font-size: 1rem;
+    }
+    .rainbow-circle img {
+        height: 100%;
+        width: 100%;
+        margin-top: 150px;
+    }
+
+    .ribbon div:last-child i {
+        display: none;
+    }
+
 }
