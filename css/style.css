@@ -63,7 +63,7 @@ a {
     justify-content: center;
 }
 
-.rainbow-circle img:hover {
+.rainbow-circle img:hover, .rainbow-circle img:active {
     transition: all 0.5s linear;
     transform: rotate(360deg);
 }
