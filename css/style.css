@@ -64,8 +64,8 @@ a {
 }
 
 .rainbow-circle img:hover {
-    transition: all 0.2s ease-in-out;
-    transform: scale(1.1);
+    transition: all 0.5s linear;
+    transform: rotate(360deg);
 }
 
 .rainbow-circle img {
