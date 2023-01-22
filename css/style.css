@@ -58,12 +58,14 @@ a {
 }
 
 .rainbow-circle {
-    position: relative;
-    transition: all 0.6s ease-out;
-    perspective: 1000px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.rainbow-circle img:hover {
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.1);
 }
 
 .rainbow-circle img {
@@ -88,7 +90,6 @@ a {
     .rainbow-circle img {
         height: 100%;
         width: 100%;
-        margin-top: 150px;
     }
 
     .ribbon div:last-child i {
